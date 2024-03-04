@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="flex justify-center items-center h-screen">
+<body class="flex justify-center items-center h-screen flex-col">
     <div class="bg-white max-w-[430px] mt-0 mb-0 mx-auto px-[20] py-[20] shadow-xl flex flex-col border-gray-300 border-2 rounded-md">
         <h1 class="font-Vollkorn font-extrabold text-4xl leading-7 px-9 py-10 text-center">To-Do App</h1>
         <form id="todo-form">
@@ -13,6 +14,10 @@
             <button type="submit" class="bg-blue-600 border-2 rounded-md w-16 px-3 py-2 text-white font-Vollkorn mb-5 mr-5">Add</button>
         </form>
         <ul id="task-list"></ul>
+    </div>
+    <div class="bg-blue-200 max-w-[430px] mt-0 mb-0 mx-auto px-[20] py-[20] shadow-xl flex flex-col border-gray-300 border-2 rounded-md">
+        <h1 class="font-Vollkorn font-extrabold text-4xl leading-7 px-9 py-10 text-center">Local Storage</h1>
+        <ul id="task-list-2"></ul>
     </div>
     <script src="index.js"></script>
 </body>
